@@ -4,5 +4,5 @@ $Path = Test-Path -Path C:\Repositories\Thermo
 If (-NOT $Path){md -Force C:\Repositories\Thermo}
 
 git add C:\Repositories\Aco\Testone\testowy.txt
-git commit
+git commit -m "Komentarz" -m "Komentarz 2"
 git push
