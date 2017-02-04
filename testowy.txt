@@ -1,7 +1,6 @@
-If the reference repository is on the local machine,
-automatically setup .git/objects/info/alternates to obtain objects from the reference repository.
-Using an already existing repository as an alternate will require fewer objects to be copied from the repository
-being cloned, reducing network and local storage costs. When using the --reference-if-able,
-a non existing directory is skipped with a warning instead of aborting the clone.
+Set-Location -Path C:\Windows
 
-Dodana linia
+$Path = Test-Path -Path C:\Repositories\Thermo
+If (-NOT $Path){md -Force C:\Repositories\Thermo}
+
+dodana linia
